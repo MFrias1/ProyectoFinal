@@ -1,0 +1,256 @@
+*{
+    font-family: 'Questrial';
+}
+body{
+    background-color: black;
+    margin: 0;    /* "quito" espacio vacio para que el color de fondo ocupe toda la pantalla*/
+    padding: 0;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+main{
+    grid-area: main;
+}
+header{
+    grid-area: header;
+}
+footer{
+    margin-top: 5rem;
+    grid-area: footer;
+}
+a:hover{
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 18px;
+    border-color: black;
+    padding: 7px;
+}
+
+/* NAVEGADOR */
+nav ul{
+    list-style-type: none; /*quito viñetas a la lista*/
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    margin: 2rem;
+}
+
+/*INDEX*/
+/* Imagen principal */
+.imgprincipal{
+    background-color: brown;
+    display: flex;
+    align-items: center; /*en el medio de forma vetical*/
+    justify-content: center; /* en el medio de forma horizontal*/
+    padding: 5rem;
+}
+.imgprincipal div{
+    align-items: center;
+    margin: 5rem;
+}
+.imgprincipal img{
+    width: 300px;
+    height: 300px;
+}
+.imgprincipal div p{
+    width: 200px;
+    text-align: center;
+}
+/* RESEÑAS */
+.resenias {
+    text-align: center;
+}
+.carousel-item{
+    padding: 5rem;
+    
+}
+.carousel-item img{
+    width: 400px;
+    height: 300px;
+}
+.titulo{
+    padding: 2rem;
+}
+/*Tiradas con grid*/
+.tiradas{
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 100px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tiradas article img{
+    border: black solid 1rem;
+    width: 270px;
+    height: 300px;
+    margin: 1rem;
+}
+.tiradas article button{
+    margin: 0%;
+    width: fit-content;
+}
+.cancelaciones{
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Sobre Nosotros */
+.nosotros{
+    background-color: brown;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.nosotros h1{
+    text-align: center;
+}
+.nosotros div{
+    margin: 5rem;
+}
+.nosotros div p{
+    width: 500px;
+}
+.nosotros div img{
+    height: 300px;
+    width: 300px;
+}
+
+/* Contacto */
+.contactoimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    background-color:brown;
+}
+.contactoimg div{
+    margin-inline: 2rem;
+}
+.contactoimg div img{
+    height: 400px;
+    width: 400px;
+}
+.contactoimg div p{
+    width: 400px;
+}
+
+.contacto_ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:none;
+    padding: 5rem;
+}
+.contacto_ubicacion div{
+    margin-inline: 2rem;
+}
+.contacto_ubicacion div img{
+    height: 400px;
+    width: 400px;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 320px) {
+    body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    }
+    nav{
+        grid-area: header;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav li{
+        margin: 1rem;
+    }
+    main{
+        grid-area: main;
+    }
+    .imgprincipal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resenias{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .resenias´{
+        width: 100%;
+    }
+    .resenias img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*TIRADAS*/
+    .tiradas{
+        display: grid;
+        grid-template-columns: repeat(1,20fr);
+        grid-template-rows: repeat(6,20fr);
+        padding: 1rem;
+    }
+    .opciones{
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+    .menu ul li{
+       align-items: center;
+       text-align: center;
+    }
+    nav li{
+        margin: 2rem;
+    }
+    .imgprincipal{
+            flex-direction: row;
+        }
+    .carousel-item img{
+      width: 600px;
+      height: 400px;
+        }
+    
+    /*TIRADAS*/
+    .tiradas{
+        background-color: brown;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows:repeat(2, 420px);
+    }
+
+}
