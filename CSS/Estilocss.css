@@ -233,6 +233,7 @@ nav li{
         align-items: center;
     }
     .nosotros div{
+        text-align: center;
         width: 100%;
         height: 100%;
     }
