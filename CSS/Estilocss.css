@@ -17,6 +17,7 @@ main{
 }
 header{
     grid-area: header;
+    border-bottom: white solid 1px;
 }
 footer{
     margin-top: 5rem;
@@ -41,25 +42,29 @@ button{
 nav ul{
     list-style-type: none; /*quito viñetas a la lista*/
     text-align: center;
+    padding: 10px;
 }
 nav li{
     display: inline-block;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 /*INDEX*/
 /* Imagen principal */
 .imgprincipal{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: brown;
-    display: flex;
-    align-items: center; /*en el medio de forma vetical*/
-    justify-content: center; /* en el medio de forma horizontal*/
+    border-radius: 2rem;
+    margin-inline: 5rem;
+    margin-top: 5rem;
     padding: 5rem;
 }
-.imgprincipal div{
-    align-items: center;
-    margin: 5rem;
-}
+
 .imgprincipal img{
     width: 300px;
     height: 300px;
@@ -72,8 +77,13 @@ nav li{
 .resenias {
     text-align: center;
 }
+.carrusel{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+}
 .carousel-item{
-    padding: 5rem;
+    padding: 2rem;
     
 }
 .carousel-item img{
@@ -83,18 +93,19 @@ nav li{
 .titulo{
     padding: 2rem;
 }
+
 /*Tiradas con grid*/
 .tiradas{
-    background-color: brown;
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(4, 100px);
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 .tiradas article img{
-    border: black solid 1rem;
+    border: black solid 5px;
     width: 270px;
     height: 300px;
     margin: 1rem;
@@ -124,7 +135,6 @@ nav li{
     margin: 5rem;
 }
 .nosotros div p{
-    background-color: aqua;
     width: 500px;
 }
 .nosotros div img{
@@ -133,25 +143,35 @@ nav li{
 }
 
 /* Contacto */
-.contactoimg{
-    display: flex;
+.texto{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, 100%);
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5rem;
-    background-color:brown;
+    background-color: brown;
+    border-radius: 2rem;
+    margin-inline: 5rem;
+    margin-top: 5rem;
+    padding: 1rem;
 }
-.contactoimg div{
-    margin-inline: 2rem;
+.parrafo{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 4rem;
+    width: 500px;
+    height: 50%;
+    background-color:none;
 }
-.contactoimg div img{
-    height: 400px;
-    width: 400px;
+form{
+    margin-inline:4rem;
+    width: 80%;
 }
-.contactoimg div p{
-    width: 400px;
+form div p{
+    margin: 0%;
 }
-
 .contacto_ubicacion{
     display: flex;
     align-items: center;
@@ -167,7 +187,12 @@ nav li{
     width: 400px;
 }
 
-/* MEDIA QUERY */
+/* Preguntas Frecuentes */
+.contenedor{
+    margin: 5rem;
+}
+/*
+/* MEDIA QUERY 
 @media screen and (min-width: 320px) {
     body{
     display: grid;
@@ -214,7 +239,7 @@ nav li{
         height: 100%;
     }
 
-    /*TIRADAS*/
+    /*TIRADAS
     .tiradas{
         display: grid;
         grid-template-columns: repeat(1,20fr);
@@ -225,7 +250,7 @@ nav li{
         margin: 1rem;
     }
 
-    /* SOBRE NOSOTROS */
+    /* SOBRE NOSOTROS 
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -240,7 +265,20 @@ nav li{
     .parrafos{
         text-align: justify;
     }
+
+    /* CONTACTO 
+    .contactoimg{
+        display: grid;
+        grid-area: 
+        "contactoimg"
+        "contacto_ubicacion";
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
+
+    /* DUDAS 
 
 @media screen and (min-width: 1200px){
     .menu{
@@ -252,16 +290,13 @@ nav li{
        align-items: center;
        text-align: center;
     }
-    nav li{
-        margin: 2rem;
-    }
     .imgprincipal{
             flex-direction: row;
     }
     .carousel-item img{
       width: 600px;
       height: 400px;
-    }
+    }*/
     
     /*TIRADAS*/
     .tiradas{
@@ -270,8 +305,10 @@ nav li{
         grid-template-columns: repeat(3, 400px);
         grid-template-rows:repeat(2, 420px);
     }
+    
+    /* SOBRE NOSOTROS */
     .nosotros{
         display: flex;
         flex-direction: row;
     }
-}
+
