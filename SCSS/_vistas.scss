@@ -1,36 +1,37 @@
 /* MEDIA QUERY */
-body{
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 100%;
+
   @media screen and (min-width: 320px) {
-    body {
-      display: grid;
-      grid-template-areas:
-        "header"
-        "main"
-        "footer";
-      grid-template-columns: 100%;
-    }
     nav {
       grid-area: header;
-    }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    nav li {
-      margin: 1rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li {
+          margin: 1rem;
+        }
+      }
     }
     main {
       grid-area: main;
     }
-  
-    /*INDEX*/
-    .imgprincipal{
-      flex-direction: column;
+    footer {
+      grid-area: footer;
     }
-    .parrafo{
-      margin-top: 2rem;
+    /*INDEX*/
+    .imgprincipal {
+      flex-direction: column;
+      .parrafo {
+        margin-top: 2rem;
+      }
     }
     .resenias {
       text-align: center;
@@ -42,10 +43,7 @@ body{
         height: 100%;
       }
     }
-    footer {
-      grid-area: footer;
-    }
-  
+
     /*TIRADAS*/
     .tiradas {
       background-color: brown;
@@ -57,7 +55,7 @@ body{
     .opciones {
       margin: 1rem;
     }
-  
+
     /* SOBRE NOSOTROS */
     .nosotros {
       display: flex;
@@ -73,7 +71,7 @@ body{
       width: 100%;
       text-align: justify;
     }
-  
+
     /* CONTACTO */
     .main {
       display: flex;
@@ -85,7 +83,7 @@ body{
       width: 100%;
       margin: 0 auto;
     }
-    .parrafo2{
+    .parrafo2 {
       margin-top: 1rem;
       text-align: center;
     }
@@ -101,31 +99,30 @@ body{
         text-align: center;
       }
     }
-     /*INDEX*/
-     .imgprincipal{
+    /*INDEX*/
+    .imgprincipal {
       flex-direction: row;
     }
     .carousel-item img {
       width: 600px;
       height: 400px;
     }
-  
+
     /*TIRADAS*/
     .tiradas {
       grid-template-columns: repeat(3, 400px);
       grid-template-rows: repeat(2, 420px);
     }
-  
+
     /* SOBRE NOSOTROS */
     .nosotros {
       display: flex;
       flex-direction: row;
     }
-  
+
     /*CONTACTO*/
     .main {
       display: grid;
     }
   }
 }
-
