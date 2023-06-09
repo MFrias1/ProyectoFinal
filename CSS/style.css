@@ -129,14 +129,9 @@ body {
     /* SOBRE NOSOTROS */
     /*CONTACTO*/
   }
-  body .menu {
+  body nav ul {
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-items: center;
-  }
-  body .menu ul li {
-    align-items: center;
-    text-align: center;
   }
   body .imgprincipal {
     flex-direction: row;

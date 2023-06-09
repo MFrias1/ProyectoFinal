@@ -90,13 +90,10 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-    .menu {
-      flex-direction: row;
-      align-items: center;
-      justify-items: center;
-      ul li {
-        align-items: center;
-        text-align: center;
+    nav{
+      ul {
+        display: flex;
+        flex-direction: row;
       }
     }
     /*INDEX*/
