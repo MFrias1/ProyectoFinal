@@ -1,206 +1,209 @@
-body {
-  background-color: black;
-  margin: 0; /* "quito" espacio vacio para que el color de fondo ocupe toda la pantalla*/
-  padding: 0;
-  color: white;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  main {
-    grid-area: main;
-  }
-  header {
-    grid-area: header;
-  }
-  footer {
-    margin-top: 5rem;
-    grid-area: footer;
-  }
-  a:hover {
-    font-weight: bolder;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  button {
+* {
+  font-family: "Questrial";
+  body {
     background-color: black;
+    margin: 0; /* "quito" espacio vacio para que el color de fondo ocupe toda la pantalla*/
+    padding: 0;
     color: white;
-    border-radius: 18px;
-    border-color: black;
-    padding: 7px;
-  }
-}
-/* NAVEGADOR */
-nav ul {
-  list-style-type: none; /*quito viñetas a la lista*/
-  text-align: center;
-  padding: 10px;
-  li {
-    display: inline-block;
-    margin: 1rem;
-  }
-}
-
-/*INDEX*/
-/* Imagen principal */
-.imgprincipal {
-  background-color: brown;
-  display: flex;
-  align-items: center; /*en el medio de forma vetical*/
-  justify-content: center; /* en el medio de forma horizontal*/
-  padding: 5rem;
-
-  div {
-    align-items: center;
-    width: 300px;
-    margin-inline: 2rem;
-    p {
-      width: 100%;
-      text-align: justify;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    main {
+      grid-area: main;
     }
-  }
-  img {
-    text-align: center;
-    width: 300px;
-    height: 300px;
-  }
-}
-
-/* RESEÑAS */
-.resenias {
-  text-align: center;
-  .carousel-item {
-    padding: 5rem;
-    img {
-      width: 400px;
-      height: 300px;
+    header {
+      grid-area: header;
     }
-  }
-}
-.titulo {
-  padding: 2rem;
-}
-
-/*Tiradas con grid*/
-.tiradas {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(2, 400px);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: brown;
-  article{
-    img{
-      border: black solid 5px;
-      width: 270px;
-      height: 300px;
-      margin: 1rem;
+    footer {
+      margin-top: 5rem;
+      grid-area: footer;
+    }
+    a:hover {
+      font-weight: bolder;
+    }
+    a {
+      text-decoration: none;
+      color: white;
     }
     button {
-      margin: 0%;
-      width: fit-content;
+      background-color: black;
+      color: white;
+      border-radius: 18px;
+      border-color: black;
+      padding: 7px;
     }
   }
-}
-.cancelaciones {
-  text-align: center;
-  padding: 2rem;
-}
-
-/* Sobre Nosotros */
-.nosotros {
-  background-color: brown;
-  display: flex;
-  text-align: justify;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem;
-  h1 {
+  /* NAVEGADOR */
+  nav ul {
+    list-style-type: none; /*quito viñetas a la lista*/
     text-align: center;
+    padding: 10px;
+    li {
+      display: inline-block;
+      margin: 1rem;
+    }
   }
-  div {
-    margin: 5rem;
-    p {
-      width: 500px;
+
+  /*INDEX*/
+  /* Imagen principal */
+  .imgprincipal {
+    background-color: brown;
+    display: flex;
+    align-items: center; /*en el medio de forma vetical*/
+    justify-content: center; /* en el medio de forma horizontal*/
+    padding: 5rem;
+
+    div {
+      align-items: center;
+      width: 300px;
+      margin-inline: 2rem;
+      p {
+        width: 100%;
+        text-align: justify;
+      }
     }
     img {
-      height: 300px;
+      text-align: center;
       width: 300px;
+      height: 300px;
     }
   }
-}
 
-/* Contacto */
-.main {
-  background-color: brown;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  section{
-    margin-inline: 2rem;
-    .form {
-      width: 100%;
-      margin: 0%;
-      padding:2rem;
-      display: block;
-      text-align: center;
-      border-radius: 5rem;
-      border: 1px solid black;
-      .parrafo {
-        width: 100%;
-        max-width: 495px;
-        text-align: center;
-        background-color: none;
+  /* RESEÑAS */
+  .resenias {
+    text-align: center;
+    .carousel-item {
+      padding: 5rem;
+      img {
+        width: 400px;
+        height: 300px;
       }
-      .container_form {
-        div{
+    }
+  }
+  .titulo {
+    padding: 2rem;
+  }
+
+  /*Tiradas con grid*/
+  .tiradas {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    article {
+      img {
+        border: black solid 5px;
+        width: 270px;
+        height: 300px;
         margin: 1rem;
-          .label{
-            cursor: pointer;
-          }
-          .input{
-            width: 100%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid black;
-            outline: none;
+      }
+      button {
+        margin: 0%;
+        width: fit-content;
+      }
+    }
+  }
+  .cancelaciones {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  /* Sobre Nosotros */
+  .nosotros {
+    background-color: brown;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    h1 {
+      text-align: center;
+    }
+    div {
+      margin: 5rem;
+      p {
+        width: 500px;
+      }
+      img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+  }
+
+  /* Contacto */
+  .main {
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    section {
+      margin-inline: 2rem;
+      .form {
+        width: 100%;
+        margin: 0%;
+        padding: 2rem;
+        display: block;
+        text-align: center;
+        border-radius: 5rem;
+        border: 1px solid black;
+        .parrafo {
+          width: 100%;
+          max-width: 495px;
+          text-align: center;
+          background-color: none;
+        }
+        .container_form {
+          div {
+            margin: 1rem;
+            .label {
+              cursor: pointer;
+            }
+            .input {
+              width: 100%;
+              background: none;
+              border: none;
+              border-bottom: 1px solid black;
+              outline: none;
+            }
           }
         }
-      }
-      .boton{
-        width: 90%;
-        margin-inline: 1rem;
-        border: none;
-        border-radius: 3rem;
-        padding: 1rem;
-        background: white;
+        .boton {
+          width: 90%;
+          margin-inline: 1rem;
+          border: none;
+          border-radius: 3rem;
+          padding: 1rem;
+          background: white;
+        }
       }
     }
   }
-}
-div.parrafo2{
-  width: 100%;
-  text-align: center;
-}
-iframe{
-  border-radius: 3rem;
-}
+  div.parrafo2 {
+    width: 100%;
+    text-align: center;
+  }
+  iframe {
+    border-radius: 3rem;
+  }
 
-/* Preguntas Frecuentes */
-.contenedor{
-  background-color: brown;
-  display: flex;
-  align-items: center; /*en el medio de forma vetical*/
-  justify-content: center; /* en el medio de forma horizontal*/
-  padding: 6rem;
-  .container {
-    margin: 5rem;
+  /* Preguntas Frecuentes */
+  .contenedor {
+    background-color: brown;
+    display: flex;
+    align-items: center; /*en el medio de forma vetical*/
+    justify-content: center; /* en el medio de forma horizontal*/
+    padding: 6rem;
+    .container {
+      margin: 5rem;
+    }
   }
 }
