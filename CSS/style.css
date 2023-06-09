@@ -1,35 +1,30 @@
-* {
-  font-family: "Questrial";
-}
+@charset "UTF-8";
 body {
   background-color: black;
   margin: 0; /* "quito" espacio vacio para que el color de fondo ocupe toda la pantalla*/
   padding: 0;
   color: white;
   display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  grid-template-areas: "header" "main" "footer";
 }
-main {
+body main {
   grid-area: main;
 }
-header {
+body header {
   grid-area: header;
 }
-footer {
+body footer {
   margin-top: 5rem;
   grid-area: footer;
 }
-a:hover {
+body a:hover {
   font-weight: bolder;
 }
-a {
+body a {
   text-decoration: none;
   color: white;
 }
-button {
+body button {
   background-color: black;
   color: white;
   border-radius: 18px;
@@ -43,7 +38,7 @@ nav ul {
   text-align: center;
   padding: 10px;
 }
-nav li {
+nav ul li {
   display: inline-block;
   margin: 1rem;
 }
@@ -62,26 +57,28 @@ nav li {
   width: 300px;
   margin-inline: 2rem;
 }
+.imgprincipal div p {
+  width: 100%;
+  text-align: justify;
+}
 .imgprincipal img {
   text-align: center;
   width: 300px;
   height: 300px;
 }
-.imgprincipal div p {
-  width: 100%;
-  text-align: justify;
-}
+
 /* RESEÑAS */
 .resenias {
   text-align: center;
 }
-.carousel-item {
+.resenias .carousel-item {
   padding: 5rem;
 }
-.carousel-item img {
+.resenias .carousel-item img {
   width: 400px;
   height: 300px;
 }
+
 .titulo {
   padding: 2rem;
 }
@@ -106,6 +103,7 @@ nav li {
   margin: 0%;
   width: fit-content;
 }
+
 .cancelaciones {
   text-align: center;
   padding: 2rem;
@@ -144,29 +142,38 @@ nav li {
   align-items: center;
   padding: 2rem;
 }
-.main section{
+.main section {
   margin-inline: 2rem;
 }
-.form {
+.main section .form {
   width: 100%;
   margin: 0%;
-  padding:2rem;
+  padding: 2rem;
   display: block;
   text-align: center;
   border-radius: 5rem;
   border: 1px solid black;
 }
-.input{
+.main section .form .parrafo {
+  width: 100%;
+  max-width: 495px;
+  text-align: center;
+  background-color: none;
+}
+.main section .form .container_form div {
+  margin: 1rem;
+}
+.main section .form .container_form div .label {
+  cursor: pointer;
+}
+.main section .form .container_form div .input {
   width: 100%;
   background: none;
   border: none;
   border-bottom: 1px solid black;
   outline: none;
 }
-.label{
-  cursor: pointer;
-}
-.boton{
+.main section .form .boton {
   width: 90%;
   margin-inline: 1rem;
   border: none;
@@ -174,162 +181,26 @@ nav li {
   padding: 1rem;
   background: white;
 }
-.container_form div{
-  margin: 1rem;
-}
-.parrafo {
-  width: 100%;
-  max-width: 495px;
-  text-align: center;
-  background-color: none;
-}
-div.parrafo2{
+
+div.parrafo2 {
   width: 100%;
   text-align: center;
 }
-iframe{
+
+iframe {
   border-radius: 3rem;
 }
 
 /* Preguntas Frecuentes */
-.contenedor{
+.contenedor {
   background-color: brown;
   display: flex;
   align-items: center; /*en el medio de forma vetical*/
   justify-content: center; /* en el medio de forma horizontal*/
   padding: 6rem;
 }
-.container {
+.contenedor .container {
   margin: 5rem;
 }
 
-/* MEDIA QUERY */
-@media screen and (min-width: 320px) {
-  body {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    grid-template-columns: 100%;
-  }
-  nav {
-    grid-area: header;
-  }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  nav li {
-    margin: 1rem;
-  }
-  main {
-    grid-area: main;
-  }
-
-  /*INDEX*/
-  .imgprincipal{
-    flex-direction: column;
-  }
-  .parrafo{
-    margin-top: 2rem;
-  }
-  .resenias {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  footer {
-    grid-area: footer;
-  }
-  .resenias {
-    width: 100%;
-  }
-  .resenias img {
-    width: 100%;
-    height: 100%;
-  }
-
-  /*TIRADAS*/
-  .tiradas {
-    background-color: brown;
-    display: grid;
-    grid-template-columns: repeat(1, 20fr);
-    grid-template-rows: repeat(6, 20fr);
-    padding: 1rem;
-  }
-  .opciones {
-    margin: 1rem;
-  }
-
-  /* SOBRE NOSOTROS */
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .nosotros div img {
-    text-align: center;
-    width: 100%;
-  }
-  .parrafos {
-    width: 100%;
-    text-align: justify;
-  }
-
-  /* CONTACTO */
-  .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .form {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .parrafo2{
-    margin-top: 1rem;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .menu {
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-  }
-  .menu ul li {
-    align-items: center;
-    text-align: center;
-  }
-   /*INDEX*/
-   .imgprincipal{
-    flex-direction: row;
-  }
-  .carousel-item img {
-    width: 600px;
-    height: 400px;
-  }
-
-  /*TIRADAS*/
-  .tiradas {
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(2, 420px);
-  }
-
-  /* SOBRE NOSOTROS */
-  .nosotros {
-    display: flex;
-    flex-direction: row;
-  }
-
-  /*CONTACTO*/
-  .main {
-    display: grid;
-  }
-}
+/*# sourceMappingURL=style.css.map */
