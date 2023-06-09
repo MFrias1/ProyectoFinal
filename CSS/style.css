@@ -28,12 +28,12 @@
   margin-top: 5rem;
   grid-area: footer;
 }
-* body a:hover {
-  font-weight: bolder;
-}
 * body a {
   text-decoration: none;
   color: white;
+}
+* body a:hover {
+  font-weight: bolder;
 }
 * body button {
   background-color: black;

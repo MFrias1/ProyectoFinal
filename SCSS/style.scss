@@ -20,12 +20,12 @@
       margin-top: 5rem;
       grid-area: footer;
     }
-    a:hover {
-      font-weight: bolder;
-    }
     a {
       text-decoration: none;
       color: white;
+      &:hover {
+        font-weight: bolder;
+      }
     }
     button {
       background-color: black;
