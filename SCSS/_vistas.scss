@@ -29,8 +29,17 @@ body {
     /*INDEX*/
     .imgprincipal {
       flex-direction: column;
-      .parrafo {
-        margin-top: 2rem;
+      div {
+        align-items: center;
+        width: 100%;
+        min-width: 300px;
+        max-width: 800px;
+        text-align: justify;
+        margin-inline: 2rem;
+        p {
+          width: 100%;
+          text-align: justify;
+        }
       }
     }
     .resenias {
@@ -46,7 +55,6 @@ body {
 
     /*TIRADAS*/
     .tiradas {
-      background-color: brown;
       display: grid;
       grid-template-columns: repeat(1, 20fr);
       grid-template-rows: repeat(6, 20fr);
@@ -62,14 +70,15 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-    .nosotros div img {
-      text-align: center;
-      width: 100%;
-    }
-    .parrafos {
-      width: 100%;
-      text-align: justify;
+      .parrafos {
+        width: 100%;
+        min-width: 300px;
+        max-width: 800px;
+        text-align: justify;
+        p{
+          width: 100%;
+        }
+      }
     }
 
     /* CONTACTO */
@@ -109,12 +118,6 @@ body {
     .tiradas {
       grid-template-columns: repeat(3, 400px);
       grid-template-rows: repeat(2, 420px);
-    }
-
-    /* SOBRE NOSOTROS */
-    .nosotros {
-      display: flex;
-      flex-direction: row;
     }
 
     /*CONTACTO*/
