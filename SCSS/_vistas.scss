@@ -75,7 +75,7 @@ body {
         min-width: 300px;
         max-width: 800px;
         text-align: justify;
-        p{
+        p {
           width: 100%;
         }
       }
@@ -99,7 +99,7 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-    nav{
+    nav {
       ul {
         display: flex;
         flex-direction: row;

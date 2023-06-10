@@ -1,33 +1,26 @@
 body {
-    background-color: black;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  main {
+    grid-area: main;
+  }
+  header {
+    grid-area: header;
+  }
+  footer {
+    padding-top: 3rem;
+    grid-area: footer;
+  }
+  a {
+    text-decoration: none;
     color: white;
-    display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    main {
-      grid-area: main;
-    }
-    header {
-      grid-area: header;
-    }
-    footer {
-      margin-top: 5rem;
-      grid-area: footer;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-      &:hover {
-        font-weight: bolder;
-      }
-    }
-    button {
-      background-color: rgb(255, 255, 255);
-      color: black;
-      border-radius: 18px;
-      border-color: none;
-      padding: 7px;
+    &:hover {
+      font-weight: bolder;
     }
   }
+}

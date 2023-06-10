@@ -18,7 +18,7 @@ body header {
   grid-area: header;
 }
 body footer {
-  margin-top: 5rem;
+  padding-top: 3rem;
   grid-area: footer;
 }
 body a {
@@ -27,13 +27,6 @@ body a {
 }
 body a:hover {
   font-weight: bolder;
-}
-body button {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  border-radius: 18px;
-  border-color: none;
-  padding: 7px;
 }
 
 /* MEDIA QUERY */
@@ -228,8 +221,16 @@ nav ul li {
 }
 
 .cancelaciones {
+  background-color: brown;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 2rem;
+}
+.cancelaciones button {
+  border-radius: 3rem;
+  border: none;
+  padding: 1rem;
 }
 
 /* Sobre Nosotros */
@@ -266,10 +267,10 @@ nav ul li {
   align-items: center;
   padding: 2rem;
 }
-.main section {
+.main .info {
   margin-inline: 2rem;
 }
-.main section .form {
+.main .info .form {
   width: 100%;
   margin: 0%;
   padding: 2rem;
@@ -278,26 +279,26 @@ nav ul li {
   border-radius: 5rem;
   border: 1px solid white;
 }
-.main section .form .parrafo {
+.main .info .form .parrafo {
   width: 100%;
   max-width: 30fr;
   text-align: justify;
   background-color: none;
 }
-.main section .form .container_form div {
+.main .info .form .container_form div {
   margin: 1rem;
 }
-.main section .form .container_form div .label {
+.main .info .form .container_form div .label {
   cursor: pointer;
 }
-.main section .form .container_form div .input {
+.main .info .form .container_form div .input {
   width: 100%;
   background: none;
   border: none;
   border-bottom: 1px solid black;
   outline: none;
 }
-.main section .form .boton {
+.main .info .form .boton {
   width: 90%;
   margin-inline: 1rem;
   border: none;

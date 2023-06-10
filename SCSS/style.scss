@@ -18,7 +18,7 @@ nav ul {
 .imgprincipal {
   background-image: url(../IMAGENES/viva-luna-studios-XZhILkqs2mk-unsplash.jpg);
   /* Foto de <a href="https://unsplash.com/@vivalunastudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Viva Luna Studios</a> en <a href="https://unsplash.com/es/fotos/XZhILkqs2mk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center; /*en el medio de forma vetical*/
@@ -34,7 +34,6 @@ nav ul {
       font-weight: bolder;
     }
   }
-
 }
 
 /* RESEÑAS */
@@ -74,16 +73,24 @@ nav ul {
   }
 }
 .cancelaciones {
+  background-color: brown;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 2rem;
+  button {
+    border-radius: 3rem;
+    border: none;
+    padding: 1rem;
+  }
 }
 
 /* Sobre Nosotros */
 .nosotros {
-  background-image: url(../IMAGENES/craft-g1ab7d2586_1280.jpg); 
+  background-image: url(../IMAGENES/craft-g1ab7d2586_1280.jpg);
   /*Image by <a href="https://pixabay.com/users/albanycolley-6298107/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2728227">Daniel Albany</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2728227">Pixabay</a>*/
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
   text-align: justify;
   padding: 8rem;
   h1 {
@@ -103,7 +110,7 @@ nav ul {
 
 /* Contacto */
 .main {
-  background-color:none;
+  background-color: none;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 100%;
@@ -111,7 +118,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  section {
+  .info {
     margin-inline: 2rem;
     .form {
       width: 100%;
