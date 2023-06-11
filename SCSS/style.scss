@@ -1,6 +1,6 @@
 @import "./reset";
 @import "./estructura";
-@import "./vistas";
+
 
 /* NAVEGADOR */
 nav ul {
@@ -43,30 +43,29 @@ nav ul {
   text-align: center;
   .carousel-inner {
     padding-inline: 2rem;
-    .carousel-item{
+    .carousel-item {
       padding: 0%;
       width: 100%;
-      .div{
+      .div {
         display: flex;
         align-items: center;
         justify-content: center;
-        div{
+        div {
           border: 1px solid white;
           margin-inline: 2rem;
           width: 300px;
           border-radius: 3rem;
-          img{
+          img {
             width: 45%;
             height: 45%;
             border-radius: 60%;
             padding-top: 5rem;
             padding-bottom: 5rem;
           }
-          p{
+          p {
             width: 100%;
           }
         }
-        
       }
     }
   }
@@ -78,7 +77,7 @@ nav ul {
 /*Tiradas con grid*/
 .tiradas {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 390px);
   grid-template-rows: repeat(2, 400px);
   justify-content: center;
   align-items: center;
@@ -89,7 +88,7 @@ nav ul {
       border-radius: 3rem;
       width: 270px;
       height: 300px;
-      margin: 1rem;
+      margin-bottom: 1rem;
     }
     button {
       width: 15rem;
@@ -98,7 +97,7 @@ nav ul {
       border-radius: 3rem;
       padding: 1rem;
       transition: padding 1s;
-      &:hover{
+      &:hover {
         padding: 1.5rem;
       }
     }
@@ -210,5 +209,130 @@ iframe {
   padding: 6rem;
   .container {
     margin: 5rem;
+  }
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 320px) {
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  nav {
+    grid-area: header;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin: 1rem;
+      }
+    }
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+  /*INDEX*/
+  .imgprincipal {
+    div {
+      align-items: center;
+      width:100%;
+      min-width: 300px;
+      max-width: 1000px;
+      text-align: justify;
+      margin-inline:1rem;
+      p {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  }
+  .resenias {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /*TIRADAS*/
+  .tiradas {
+    display: grid;
+    grid-template-columns: 20fr;
+    grid-template-rows: repeat(6, 60fr);
+    padding: 2rem;
+    article{
+      margin-bottom: 1rem;
+    }
+  }
+
+  /* SOBRE NOSOTROS */
+  .nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 100%;
+      min-width: 300px;
+      max-width: 800px;
+      text-align: justify;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  /* CONTACTO */
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 90fr);
+    justify-content: center;
+    align-items: center;
+    .info{
+      .form {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  /*INDEX*/
+  .imgprincipal {
+    flex-direction: row;
+  }
+  .carousel-inner {
+    width: 100%;
+    max-height: 900px;
+    min-height: 320px;
+  }
+
+  TIRADAS
+  .tiradas {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
+  }
+
+  CONTACTO
+  .main {
+    display: grid;
   }
 }
