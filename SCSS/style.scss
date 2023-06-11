@@ -1,7 +1,6 @@
 @import "./reset";
 @import "./estructura";
 
-
 /* NAVEGADOR */
 nav ul {
   list-style-type: none; /*quito viñetas a la lista*/
@@ -52,24 +51,26 @@ nav ul {
         justify-content: center;
         div {
           border: 1px solid white;
-          margin-inline: 2rem;
-          width: 300px;
+          width: 100%;
+          margin-inline: 1rem;
           border-radius: 3rem;
-          img {
-            width: 45%;
-            height: 45%;
-            border-radius: 60%;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-          }
-          p {
-            width: 100%;
-          }
+            img {
+              width: 45%;
+              height: 55%;
+              border-radius: 60%;
+              padding-top: 5rem;
+              padding-bottom: 5rem;
+            }
+            p {
+              width: 100%;
+            } 
+          
         }
       }
     }
   }
 }
+
 .titulo {
   padding-top: 2rem;
 }
@@ -212,8 +213,6 @@ iframe {
   }
 }
 
-
-
 /* MEDIA QUERY */
 @media screen and (min-width: 320px) {
   body {
@@ -237,16 +236,18 @@ iframe {
   }
   footer {
     grid-area: footer;
+    button {
+      margin: 1rem;
+    }
   }
   /*INDEX*/
   .imgprincipal {
     div {
       align-items: center;
-      width:100%;
+      width: 100%;
       min-width: 300px;
       max-width: 1000px;
       text-align: justify;
-      margin-inline:1rem;
       p {
         width: 100%;
         text-align: justify;
@@ -270,7 +271,7 @@ iframe {
     grid-template-columns: 20fr;
     grid-template-rows: repeat(6, 60fr);
     padding: 2rem;
-    article{
+    article {
       margin-bottom: 1rem;
     }
   }
@@ -298,13 +299,12 @@ iframe {
     grid-template-rows: repeat(2, 90fr);
     justify-content: center;
     align-items: center;
-    .info{
+    .info {
       .form {
         width: 100%;
         margin: 0 auto;
       }
     }
-    
   }
 }
 
@@ -325,14 +325,12 @@ iframe {
     min-height: 320px;
   }
 
-  TIRADAS
-  .tiradas {
+  TIRADAS .tiradas {
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(2, 400px);
   }
 
-  CONTACTO
-  .main {
+  CONTACTO .main {
     display: grid;
   }
 }

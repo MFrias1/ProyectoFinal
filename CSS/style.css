@@ -83,13 +83,13 @@ nav ul li {
 }
 .resenias .carousel-inner .carousel-item .div div {
   border: 1px solid white;
-  margin-inline: 2rem;
-  width: 300px;
+  width: 100%;
+  margin-inline: 1rem;
   border-radius: 3rem;
 }
 .resenias .carousel-inner .carousel-item .div div img {
   width: 45%;
-  height: 45%;
+  height: 55%;
   border-radius: 60%;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -263,6 +263,9 @@ iframe {
   footer {
     grid-area: footer;
   }
+  footer button {
+    margin: 1rem;
+  }
   /*INDEX*/
   .imgprincipal div {
     align-items: center;
@@ -270,7 +273,6 @@ iframe {
     min-width: 300px;
     max-width: 1000px;
     text-align: justify;
-    margin-inline: 1rem;
   }
   .imgprincipal div p {
     width: 100%;
