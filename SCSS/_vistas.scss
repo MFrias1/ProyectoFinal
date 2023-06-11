@@ -64,10 +64,9 @@
   /* SOBRE NOSOTROS */
   .nosotros {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .parrafos {
+    div {
       width: 100%;
       min-width: 300px;
       max-width: 800px;

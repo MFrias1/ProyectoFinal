@@ -88,17 +88,16 @@ body a:hover {
   /* SOBRE NOSOTROS */
   .nosotros {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .nosotros .parrafos {
+  .nosotros div {
     width: 100%;
     min-width: 300px;
     max-width: 800px;
     text-align: justify;
   }
-  .nosotros .parrafos p {
+  .nosotros div p {
     width: 100%;
   }
   /* CONTACTO */
