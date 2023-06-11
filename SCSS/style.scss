@@ -85,6 +85,10 @@ nav ul {
       border: none;
       border-radius: 3rem;
       padding: 1rem;
+      transition: padding 1s;
+      &:hover{
+        padding: 1.5rem;
+      }
     }
   }
 }
