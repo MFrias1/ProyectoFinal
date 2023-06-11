@@ -28,14 +28,11 @@
   }
   /*INDEX*/
   .imgprincipal {
-    flex-direction: column;
     div {
       align-items: center;
-      width: 100%;
-      min-width: 300px;
-      max-width: 800px;
+      width: 200fr;
       text-align: justify;
-      margin-inline: 2rem;
+      margin-inline:1rem;
       p {
         width: 100%;
         text-align: justify;
