@@ -324,13 +324,14 @@ iframe {
     max-height: 900px;
     min-height: 320px;
   }
-
-  TIRADAS .tiradas {
+  /*TIRADAS*/
+  .tiradas {
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(2, 400px);
   }
 
-  CONTACTO .main {
+  /*CONTACTO*/
+  .main {
     display: grid;
   }
 }
