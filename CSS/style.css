@@ -172,6 +172,7 @@ nav ul li {
 .imgprincipal div {
   background-color: brown;
   padding: 2rem;
+  border-radius: 3rem;
   margin-inline: 3rem;
   width: 500px;
 }
@@ -182,6 +183,7 @@ nav ul li {
 
 /* RESEÑAS */
 .resenias {
+  padding-top: 4rem;
   text-align: center;
 }
 .resenias .carousel-inner {
@@ -196,12 +198,21 @@ nav ul li {
   align-items: center;
   justify-content: center;
 }
-.resenias .carousel-inner .carousel-item .div img {
-  width: 400px;
+.resenias .carousel-inner .carousel-item .div div {
+  border: 1px solid white;
   margin-inline: 2rem;
+  width: 300px;
+  border-radius: 3rem;
 }
-.resenias .carousel-inner .carousel-item .div p {
-  width: 400px;
+.resenias .carousel-inner .carousel-item .div div img {
+  width: 45%;
+  height: 45%;
+  border-radius: 60%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.resenias .carousel-inner .carousel-item .div div p {
+  width: 100%;
 }
 
 .titulo {
@@ -266,6 +277,7 @@ nav ul li {
   padding: 2rem;
   margin-inline: 3rem;
   width: 500px;
+  border-radius: 3rem;
 }
 .nosotros div p {
   width: 100%;

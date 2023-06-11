@@ -27,6 +27,7 @@ nav ul {
   div {
     background-color: brown;
     padding: 2rem;
+    border-radius: 3rem;
     margin-inline: 3rem;
     width: 500px;
     p {
@@ -38,6 +39,7 @@ nav ul {
 
 /* RESEÑAS */
 .resenias {
+  padding-top: 4rem;
   text-align: center;
   .carousel-inner {
     padding-inline: 2rem;
@@ -48,13 +50,23 @@ nav ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
-          width: 400px;
+        div{
+          border: 1px solid white;
           margin-inline: 2rem;
+          width: 300px;
+          border-radius: 3rem;
+          img{
+            width: 45%;
+            height: 45%;
+            border-radius: 60%;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+          }
+          p{
+            width: 100%;
+          }
         }
-        p{
-          width: 400px;
-        }
+        
       }
     }
   }
@@ -121,6 +133,7 @@ nav ul {
     padding: 2rem;
     margin-inline: 3rem;
     width: 500px;
+    border-radius: 3rem;
     p {
       width: 100%;
       font-weight: bolder;
