@@ -251,13 +251,42 @@ iframe {
   }
   .resenias {
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(114, 3, 3);
+    padding: 2rem;
+  }
+  .resenias .titulo {
+    padding-top: 0%;
+    padding-bottom: 3rem;
+  }
+  .resenias .carousel-inner {
+    padding-inline: 2rem;
+  }
+  .resenias .carousel-inner .carousel-item {
+    padding: 0%;
     width: 100%;
   }
-  .resenias img {
-    width: 100%;
+  .resenias .carousel-inner .carousel-item .div {
+    display: grid;
+    grid-template-columns: repeat(2, 55fr);
+    margin-inline: 1rem;
+  }
+  .resenias .carousel-inner .carousel-item .div div {
+    border: 1px solid white;
+    width: 75%;
     height: 100%;
+    margin-inline: 1rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+  }
+  .resenias .carousel-inner .carousel-item .div div img {
+    width: 45%;
+    height: 38%;
+    border-radius: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .resenias .carousel-inner .carousel-item .div div p {
+    width: 100%;
   }
   /*TIRADAS*/
   .tiradas {
@@ -299,10 +328,15 @@ iframe {
 }
 @media screen and (min-width: 1200px) {
   /*INDEX*/
-  .carousel-inner {
+  .resenias .carousel-inner {
+    padding-inline: 2rem;
+  }
+  .resenias .carousel-inner .carousel-item {
+    padding: 0%;
     width: 100%;
-    max-height: 800px;
-    min-height: 320px;
+  }
+  .resenias .carousel-inner .carousel-item .div {
+    display: flex;
   }
   /*TIRADAS*/
   .tiradas {
