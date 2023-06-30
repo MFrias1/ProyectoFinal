@@ -36,14 +36,11 @@ header {
 
 /*INDEX*/
 /* Imagen principal */
-.parrafo {
-  align-items: center;
-  justify-content: center;
+.parrafo_principal {
   background-color: brown;
   padding: 12rem;
 }
-.parrafo p {
-  padding: 0%;
+.parrafo_principal p {
   text-align: center;
   width: 100%;
   font-weight: bolder;
@@ -52,8 +49,11 @@ header {
 /* RESEÑAS */
 .resenias {
   text-align: center;
+  background-color: rgb(114, 3, 3);
+  padding: 2rem;
 }
 .resenias .titulo {
+  padding-top: 0%;
   padding-bottom: 3rem;
 }
 .resenias .carousel-inner {
@@ -240,13 +240,12 @@ iframe {
     margin: 1rem;
   }
   /*INDEX*/
-  .imgprincipal div {
+  .parrafo_principal {
     align-items: center;
     width: 100%;
-    min-width: 300px;
     text-align: justify;
   }
-  .imgprincipal div p {
+  .parrafo_principal p {
     width: 100%;
     text-align: justify;
   }

@@ -8,13 +8,10 @@ header {
 
 /*INDEX*/
 /* Imagen principal */
-.parrafo{
-  align-items: center;
-  justify-content: center;
+.parrafo_principal {
   background-color: brown;
   padding: 12rem;
-   p {
-    padding: 0%;
+  p {
     text-align: center;
     width: 100%;
     font-weight: bolder;
@@ -24,7 +21,10 @@ header {
 /* RESEÑAS */
 .resenias {
   text-align: center;
-  .titulo{
+  background-color: rgb(114, 3, 3);
+  padding: 2rem;
+  .titulo {
+    padding-top: 0%;
     padding-bottom: 3rem;
   }
   .carousel-inner {
@@ -143,7 +143,7 @@ header {
       display: block;
       border-radius: 5rem;
       border: 1px solid white;
-      .titulo_form{
+      .titulo_form {
         text-align: center;
         margin: 0.5px;
       }
@@ -213,16 +213,13 @@ iframe {
     }
   }
   /*INDEX*/
-  .imgprincipal {
-    div {
-      align-items: center;
+  .parrafo_principal {
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+    p {
       width: 100%;
-      min-width: 300px;
       text-align: justify;
-      p {
-        width: 100%;
-        text-align: justify;
-      }
     }
   }
   .resenias {
@@ -294,10 +291,10 @@ iframe {
 
   /*CONTACTO*/
   .main {
-    grid-template-columns: repeat(2,600px);
+    grid-template-columns: repeat(2, 600px);
     grid-template-rows: 100%;
-    .info{
-      .form{
+    .info {
+      .form {
         height: 100%;
       }
     }
