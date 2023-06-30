@@ -72,15 +72,15 @@ header {
 .resenias .carousel-inner .carousel-item .div div {
   border: 1px solid white;
   width: 100%;
-  margin-inline: 1rem;
+  margin-inline: 5rem;
   border-radius: 3rem;
 }
 .resenias .carousel-inner .carousel-item .div div img {
   width: 45%;
   height: 55%;
   border-radius: 60%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .resenias .carousel-inner .carousel-item .div div p {
   width: 100%;
@@ -273,7 +273,7 @@ iframe {
   .resenias .carousel-inner .carousel-item .div div {
     border: 1px solid white;
     width: 75%;
-    height: 100%;
+    height: 90%;
     margin-inline: 1rem;
     border-radius: 3rem;
     margin-bottom: 1rem;
@@ -282,8 +282,8 @@ iframe {
     width: 45%;
     height: 38%;
     border-radius: 60%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .resenias .carousel-inner .carousel-item .div div p {
     width: 100%;
