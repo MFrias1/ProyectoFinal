@@ -30,44 +30,30 @@ body a:hover {
 }
 
 /* NAVEGADOR */
-nav ul {
-  list-style-type: none; /*quito viñetas a la lista*/
-  text-align: center;
-  padding: 10px;
-}
-nav ul li {
-  display: inline-block;
-  margin: 1rem;
+header {
+  padding: 2rem;
 }
 
 /*INDEX*/
 /* Imagen principal */
-.imgprincipal {
-  background-image: url(../IMAGENES/viva-luna-studios-XZhILkqs2mk-unsplash.jpg);
-  /* Foto de <a href="https://unsplash.com/@vivalunastudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Viva Luna Studios</a> en <a href="https://unsplash.com/es/fotos/XZhILkqs2mk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center; /*en el medio de forma vetical*/
-  justify-content: center; /* en el medio de forma horizontal*/
-  padding: 10rem;
-}
-.imgprincipal div {
+.parrafo {
+  align-items: center;
+  justify-content: center;
   background-color: brown;
-  padding: 2rem;
-  border-radius: 3rem;
-  margin-inline: 3rem;
-  width: 500px;
+  padding: 12rem;
 }
-.imgprincipal div p {
+.parrafo p {
+  text-align: center;
   width: 100%;
   font-weight: bolder;
 }
 
 /* RESEÑAS */
 .resenias {
-  padding-top: 4rem;
   text-align: center;
+}
+.resenias .titulo {
+  padding-bottom: 3rem;
 }
 .resenias .carousel-inner {
   padding-inline: 2rem;
@@ -80,6 +66,7 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-inline: 6rem;
 }
 .resenias .carousel-inner .carousel-item .div div {
   border: 1px solid white;
@@ -105,7 +92,7 @@ nav ul li {
 /*Tiradas con grid*/
 .tiradas {
   display: grid;
-  grid-template-columns: repeat(3, 390px);
+  grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(2, 400px);
   justify-content: center;
   align-items: center;
@@ -119,15 +106,11 @@ nav ul li {
   margin-bottom: 1rem;
 }
 .tiradas article button {
-  width: 15rem;
-  margin-inline: 1rem;
+  width: 13rem;
+  margin-inline: 0.5rem;
   border: none;
   border-radius: 3rem;
   padding: 1rem;
-  transition: padding 1s;
-}
-.tiradas article button:hover {
-  padding: 1.5rem;
 }
 
 .cancelaciones {
@@ -137,7 +120,7 @@ nav ul li {
   text-align: center;
   padding: 2rem;
 }
-.cancelaciones button {
+.cancelaciones .cancelar {
   border-radius: 3rem;
   border: none;
   padding: 1rem;
@@ -245,18 +228,6 @@ iframe {
     display: grid;
     grid-template-columns: 100%;
   }
-  nav {
-    grid-area: header;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul li {
-    margin: 1rem;
-  }
   main {
     grid-area: main;
   }
@@ -271,7 +242,6 @@ iframe {
     align-items: center;
     width: 100%;
     min-width: 300px;
-    max-width: 1000px;
     text-align: justify;
   }
   .imgprincipal div p {
@@ -327,17 +297,10 @@ iframe {
   }
 }
 @media screen and (min-width: 1200px) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-  }
   /*INDEX*/
-  .imgprincipal {
-    flex-direction: row;
-  }
   .carousel-inner {
     width: 100%;
-    max-height: 900px;
+    max-height: 800px;
     min-height: 320px;
   }
   /*TIRADAS*/
@@ -347,7 +310,11 @@ iframe {
   }
   /*CONTACTO*/
   .main {
-    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: 100%;
+  }
+  .main .info .form {
+    height: 100%;
   }
 }
 

@@ -28,28 +28,35 @@
     <!--Todo lo que ve el usuario va aqui adentro-->
 
     <header>
-      <nav>
         <!--Menu navegable -->
-        <ul>
-          <li>
-            <a href="./index.html" target=""> <h2>TAROT READINGS</h2></a>
-          </li>
-          <li>
-            <a href="./PAGES/SOBRE_NOSOTROS.html" target="">SOBRE NOSOTROS</a>
-          </li>
-          <li><a href="./PAGES/TIRADAS.html" target="">TIRADAS</a></li>
-          <li><a href="./PAGES/CONTACTO.html" target="">CONTACTO</a></li>
-          <li>
-            <a href="./PAGES/PREGUNTAS_FRECUENTES.html" target=""
-              >PREGUNTAS FRECUENTES</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="./index.html" target=""> <h2>TAROT READINGS</h2></a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./PAGES/SOBRE_NOSOTROS.html" target="">SOBRE NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./PAGES/TIRADAS.html" target="">TIRADAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./PAGES/CONTACTO.html" target="">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./PAGES/PREGUNTAS_FRECUENTES.html" target="">PREGUNTAS FRECUENTES</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
 
     <main>
-      <section class="imgprincipal">
+      <section>
         <div class="parrafo">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint
