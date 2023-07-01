@@ -67,9 +67,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-inline: 6rem;
+  margin-inline: 2rem;
 }
 .resenias .carousel-inner .carousel-item .div div {
+  padding: 0;
   border: 1px solid white;
   width: 100%;
   margin-inline: 5rem;
@@ -328,9 +329,6 @@ iframe {
 }
 @media screen and (min-width: 1200px) {
   /*INDEX*/
-  .resenias .carousel-inner {
-    padding-inline: 2rem;
-  }
   .resenias .carousel-inner .carousel-item {
     padding: 0%;
     width: 100%;

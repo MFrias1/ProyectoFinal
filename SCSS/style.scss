@@ -36,8 +36,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-inline: 6rem;
+        margin-inline: 2rem;
         div {
+          padding: 0;
           border: 1px solid white;
           width: 100%;
           margin-inline: 5rem;
@@ -310,7 +311,6 @@ iframe {
   /*INDEX*/
   .resenias {
     .carousel-inner {
-      padding-inline: 2rem;
       .carousel-item {
         padding: 0%;
         width: 100%;
