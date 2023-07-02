@@ -230,6 +230,9 @@ iframe {
     width: 100%;
     text-align: justify;
   }
+  .resenias {
+    width: 100%;
+  }
   /*TIRADAS*/
   .tiradas {
     display: grid;
@@ -270,6 +273,9 @@ iframe {
 }
 @media screen and (min-width: 1200px) {
   /*INDEX*/
+  .resenias {
+    width: 100%;
+  }
   /*TIRADAS*/
   .tiradas {
     grid-template-columns: repeat(3, 400px);
