@@ -176,15 +176,18 @@ iframe {
   justify-content: center; /* en el medio de forma horizontal*/
   padding: 6rem;
   .container {
-    margin: 5rem;
+    margin: 3rem;
   }
 }
 
 /* MEDIA QUERY */
 @media screen and (min-width: 320px) {
-  main {
+  html {
     display: grid;
     grid-template-columns: 100%;
+  }
+  main {
+    grid-area: main;
   }
   footer {
     grid-area: footer;
