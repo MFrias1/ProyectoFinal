@@ -38,8 +38,11 @@ header {
 /* Imagen principal */
 .parrafo_principal {
   background-color: brown;
-  padding: 12rem;
   text-align: center;
+}
+.parrafo_principal div {
+  padding: 2rem;
+  margin-inline: 3rem;
 }
 .parrafo_principal div p {
   text-align: center;
@@ -49,20 +52,19 @@ header {
 
 /* RESEÑAS */
 .resenias {
-  background-color: rgb(114, 3, 3);
+  background-color: rgb(0, 0, 0);
 }
 .resenias .carousel {
   width: 100%;
+  height: 36rem;
 }
 .resenias .carousel .carousel-inner {
-  height: 35rem;
-}
-.resenias .carousel .carousel-inner .carousel-item {
+  height: 100%;
   width: 100%;
 }
 .resenias .carousel .carousel-inner .carousel-item img {
-  width: 100%;
-  height: 100%;
+  width: fit-content;
+  height: 32rem;
 }
 
 .titulo {
