@@ -253,7 +253,6 @@ iframe {
   .nosotros div {
     width: 100%;
     min-width: 300px;
-    max-width: 800px;
     text-align: justify;
   }
   .nosotros div p {
