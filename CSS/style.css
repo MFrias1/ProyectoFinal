@@ -37,7 +37,7 @@ header {
 /*INDEX*/
 /* Imagen principal */
 .parrafo_principal {
-  background-color: brown;
+  background-color: rgb(114, 3, 3);
   text-align: center;
 }
 .parrafo_principal div {
@@ -52,7 +52,7 @@ header {
 
 /* RESEÑAS */
 .resenias {
-  background-color: rgb(0, 0, 0);
+  background-color: brown;
 }
 .resenias .carousel {
   width: 100%;
