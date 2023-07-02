@@ -120,6 +120,8 @@ header {
   text-align: center;
 }
 .nosotros div {
+  margin: 5rem;
+  text-align: justify;
   background-color: brown;
   padding: 2rem;
   margin-inline: 3rem;
@@ -244,9 +246,16 @@ iframe {
     margin-bottom: 1rem;
   }
   /* SOBRE NOSOTROS */
+  .nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .nosotros div {
     width: 100%;
-    min-width: 300px;
+    min-width: 200px;
+    height: 100%;
+    min-height: 300px;
   }
   .nosotros div p {
     width: 100%;
