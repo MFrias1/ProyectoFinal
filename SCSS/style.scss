@@ -98,7 +98,7 @@ header {
     background-color: brown;
     padding: 2rem;
     margin-inline: 3rem;
-    width: 500px;
+    width: 400px;
     border-radius: 3rem;
     p {
       width: 100%;
@@ -259,6 +259,14 @@ iframe {
   /*INDEX*/
   .resenias{
     width: 100%;
+  }
+  
+  /* SOBRE NOSOTROS */
+  .nosotros {
+    div {
+      width: 100%;
+      max-width: 500px;
+    }
   }
   /*TIRADAS*/
   .tiradas {
