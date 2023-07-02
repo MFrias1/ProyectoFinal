@@ -207,12 +207,9 @@ iframe {
 
 /* MEDIA QUERY */
 @media screen and (min-width: 320px) {
-  html {
+  main {
     display: grid;
     grid-template-columns: 100%;
-  }
-  main {
-    grid-area: main;
   }
   footer {
     grid-area: footer;
